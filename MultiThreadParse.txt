@@ -40,9 +40,9 @@ int main(int argc, int **argv) {
 			}
 	}
 
-	b[GET] = bufferCrete(tname[GET], 1);
-	b[PROCESS] = bufferCrete(tname[PROCESS], 1);
-	b[PRINT] = bufferCrete(tname[PRINT], 1);
+	b[GET] = bufferCreate(tname[GET], 1);
+	b[PROCESS] = bufferCreate(tname[PROCESS], 1);
+	b[PRINT] = bufferCreate(tname[PRINT], 1);
 
 	pthread_create(&getId, NULL, get, NULL);
 	pthread_create(&processId, NULL, process, NULL);
